@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学科资源网</title>
+    <link rel="stylesheet" href="https://static.leke.cn/styles/common/global.css">
+    <link rel="stylesheet" type="text/css" href="https://static.leke.cn/styles/resource/resource.css">
+    <link rel="stylesheet" href="../styles/index/index.css">
+</head>
+<body>
+<div class="g-top">
+    <div class="m-top-center">
+        <h3 class="m-top-center-tit">
+            苍南中学学科资源网
+        </h3>
+        <div class="m-top-center-operation">
+            <div class="c-top-form">
+                <input type="text" class="c-demo-ipt" placeholder="请输入……" value="请输入……">
+                <i class="c-search-icon"></i>
+            </div>
+            <span class="c-top-tips">消息（99）</span>
+            <span class="c-top-tips c-top-tips_set">设置</span>
+            <span class="c-top-tips c-top-tips_no">登录/注册</span>
+            <div class="c-top-person">
+                <img src="../images/index/person-header.png" alt="" class="c-top-person-img">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="g-bd">
+    <div class="g-mn z-resource">
+        <div class="m-tab totalresource">
+           <div class="c-resouce-select studysection f-fl">
+            <a class="resource-title" href="#">高一<span id="title-htm">语文</span></a>
+        </div>
+            <ul class="m-tab-ul">
+                <li class="active"><a href="#">课件</a></li>
+                <li><a href="#">习题</a></li>
+                <li><a href="#">试卷</a></li>
+                <li><a href="#">微课</a></li>
+                <li><a href="#">备课包</a></li>
+                <li><a href="#">习题册</a></li>
+            </ul>
+            <div class="info">
+                <a class="lekelist" href="#"><i class="ico"></i><em data-bind="i18n: 'repo.common.school.topn'">老师榜单</em>
+                    <div class="ranking">
+                        <div>
+                            <div class="total">
+                            <h3 class="title">———<span data-bind="i18n: caption">月创建TOP5</span>———</h3>
+                            <div style="min-height: 180px;">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th width="20"></th>
+                                        <th width="75">姓名</th>
+
+                                        <th  width="45">资源</th>
+
+                                        <th  width="45">课件</th>
+
+                                        <th width="45">试卷</th>
+
+                                        <th   width="45">其它</th>
+
+                                        <th   width="70">加权分数</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody data-bind="foreach: items">
+                                    <tr>
+                                        <td>
+                                            <i class="gold"></i>
+                                        </td>
+                                        <td  title="范真真">范真真</td>
+
+                                        <td title="153">153</td>
+
+                                        <td  title="39">39</td>
+
+                                        <td title="41">41</td>
+
+                                        <td title="73">73</td>
+
+                                        <td  title="134.00">134.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i  class="silver"></i>
+                                        </td>
+                                        <td  title="林延岳">林延岳</td>
+
+                                        <td  title="15">15</td>
+
+                                        <td  title="10">10</td>
+
+                                        <td  title="0">0</td>
+
+                                        <td  title="5">5</td>
+
+                                        <td  title="15.00">15.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="copper"></i>
+                                        </td>
+                                        <td title="梅余奇">梅余奇</td>
+
+                                        <td title="7">7</td>
+
+                                        <td title="0">0</td>
+
+                                        <td title="7">7</td>
+
+                                        <td title="0">0</td>
+
+                                        <td title="7.00">7.00</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p data-bind="i18n: note">注：按老师近一月创建至学校资源数量，全校排名。</p>
+                            <p>加权分数=课件数*1+试卷数*1+习题数*0.05+其他资源数*1。</p>
+                        </div></div>
+                        <div>
+                            <div class="total">
+                            <h3 class="title">———<span >总创建排名</span>———</h3>
+                            <div style="min-height: 180px;">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th width="20"></th>
+                                        <th  width="75">姓名</th>
+
+                                        <th  width="45">备课包</th>
+
+                                        <th  width="45">课件</th>
+
+                                        <th width="45">试卷</th>
+
+                                        <th  width="45">其它</th>
+
+                                        <th  width="70">加权分数</th>
+                                        <!-- /ko -->
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <i class="gold"></i>
+                                        </td>
+                                        <td  title="范真真">范真真</td>
+
+                                        <td title="153">153</td>
+
+                                        <td  title="39">39</td>
+
+                                        <td title="41">41</td>
+
+                                        <td title="73">73</td>
+
+                                        <td  title="134.00">134.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i  class="silver"></i>
+                                        </td>
+                                        <td  title="林延岳">林延岳</td>
+
+                                        <td  title="15">15</td>
+
+                                        <td  title="10">10</td>
+
+                                        <td  title="0">0</td>
+
+                                        <td  title="5">5</td>
+
+                                        <td  title="15.00">15.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="copper"></i>
+                                        </td>
+                                        <td title="梅余奇">梅余奇</td>
+
+                                        <td title="7">7</td>
+
+                                        <td title="0">0</td>
+
+                                        <td title="7">7</td>
+
+                                        <td title="0">0</td>
+
+                                        <td title="7.00">7.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <em class="sum">4</em>
+                                        </td>
+                                        <td title="孙丁共">孙丁共</td>
+
+                                        <td title="0">0</td>
+
+                                        <td title="0">0</td>
+
+                                        <td  title="0">0</td>
+
+                                        <td  title="0">0</td>
+
+                                        <td title="0.00">0.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <em class="sum" >5</em>
+                                        </td>
+                                        <td title="庄召弟">庄召弟</td>
+
+                                        <td  title="0">0</td>
+
+                                        <td title="0">0</td>
+
+                                        <td  title="0">0</td>
+
+                                        <td  title="0">0</td>
+
+                                        <td title="0.00">0.00</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <p data-bind="i18n: note">注：按老师创建到学校资源数量，全校排名。</p>
+                            <p>加权分数=课件数*1+试卷数*1+习题数*0.05+其他资源数*1。</p>
+                        </div></div>
+                    </div>
+                </a>
+	<span class="count"><i class="ico"></i>资源数量
+		<div class="summarycount">
+            <div class="con">
+                <div class="title">
+					<span>
+						<em  >资源总数</em>
+						<em  >175</em>
+					</span>
+                </div>
+                <div class="countlist" data-bind="foreach: school.showCounts">
+					<span>
+						<em data-bind="text: name">课件</em>
+						<em data-bind="text: count">49</em>
+					</span>
+
+					<span>
+						<em data-bind="text: name">试卷</em>
+						<em data-bind="text: count">48</em>
+					</span>
+
+					<span>
+						<em data-bind="text: name">习题</em>
+						<em data-bind="text: count">20</em>
+					</span>
+
+					<span>
+						<em data-bind="text: name">备课包</em>
+						<em data-bind="text: count">24</em>
+					</span>
+
+					<span>
+						<em data-bind="text: name">其它</em>
+						<em data-bind="text: count">34</em>
+					</span>
+                </div>
+            </div>
+            <div class="arrow">
+                <em></em> <i></i>
+            </div>
+        </div>
+	</span>
+            </div>
+        </div>
+        <div class="left">
+            <div class="studysection" style="height:0;background:none;border:none;">
+                <div class="content">
+                    <h3>年级学科</h3>
+                    <div class="stage"><label>年级：</label>
+			<span class="details" data-bind="foreach: schoolStages">
+				<em class="small on">高一</em>
+				<em class="small">高二</em>
+				<em class="small">高三</em>
+			</span>
+                    </div>
+                    <div>
+                        <label>学科：</label>
+                        <select name="subjectId" id="subjectId" class="u-select u-select-nm">
+                            <option value="语文">语文</option>
+                            <option value="数学">数学</option>
+                            <option value="英语">英语</option>
+                            <option value="物理">物理</option>
+                            <option value="化学">化学</option>
+                            <option value="生物">生物</option>
+                            <option value="政治">政治</option>
+                            <option value="历史">历史</option>
+                            <option value="地理">地理</option>
+                            <option value="信息">信息</option>
+                            <option value="通用">通用</option>
+                            <option value="体育">体育</option>
+                            <option value="音乐">音乐</option>
+                            <option value="美术">美术</option>
+                            <option value="心理">心理</option>
+                        </select>
+                    </div>
+                    <div class="btn" id="okBtn">
+                        <input type="button" class="u-btn u-btn-nm u-btn-bg-turquoise" value="确定">
+                        <input type="button" class="u-btn u-btn-nm u-btn-bg-gray" value="取消">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="resourceformat dashed">
+                <span>资源格式：</span>
+                <div class="list">
+                    <ul>
+                        <li  class="fontcolor">全部</li>
+                        <li>PPT</li>
+
+                        <li>文档</li>
+
+                        <li >图片</li>
+
+                        <li >音频</li>
+
+                        <li >视频</li>
+
+                        <li>压缩包</li>
+
+                        <li >其它</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resourceformat dashed">
+                <span>来源：</span>
+                <div class="list">
+                    <ul>
+                        <li  class="fontcolor">全部</li>
+                        <li>我录入的</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="selecttype" style="margin-top:20px;">
+                <div class="sort">
+                    <!-- ko foreach: orderBys -->
+		         <span  class="on">相关度</span>
+
+		         <span >最新</span>
+
+		         <span >最赞</span>
+
+		         <span  >收藏次数</span>
+
+		         <span >引用次数</span>
+                </div>
+
+                <div class="search" style="float:none;">
+                    <a class="c-btn-addresource" href="#"><i></i>添加学校课件</a>
+                    <div class="selecttext" >
+                        <input type="text" placeholder="请输入关键词" data-bind="value: query.content">
+                        <a href="#" class="selectbut" data-bind="click: doSearch"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-resource-list">
+                <div class="listoperatingarea">
+                    <span class="checkbox"><input type="checkbox" name="checkAll" id="checkAll" ></span>
+                    <div class="f-fr f-mr5">
+                        <input type="button" class="c-resouce-btnhollow" value="加入习题蓝">
+                        <input type="button" class="c-resouce-btnhollow" value="收藏">
+                    </div>
+                </div>
+                <ul data-bind="foreach: records">
+                    <li class="item">
+                        <div class="resourcelist">
+                            <span class="checkbox"><input type="checkbox" name="resId" id="resId" data-bind="value: resId,visible: typeIcon != 'rar'" value="14810"></span>
+                            <div class="info">
+                                <i class="c-restype video" data-bind="css: typeIcon"></i>
+                                <div class="resourcecon">
+                                    <div class="title" title="2016浙江高考语文卷">
+                                        <a href="##">2016浙江高考语文卷</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottomoperation">
+                            <div class="attr">
+                                <span>贡献者:<em data-bind="text: creatorName">毛茹茹</em></span>
+                                <span data-bind="text: createdOnStr">2016-06-23</span>
+                                <span>引用:<em data-bind="text: usedCount || 0">1</em></span>
+                                <span>收藏:<em data-bind="text: favCount  || 0">1</em></span>
+                                <span>下载:<em data-bind="text: downCount  || 0">1</em></span>
+                                <span>状态：<!-- ko text: statusStr -->已通过<!-- /ko --></span>
+                                <span><!-- ko text: editLog --><!-- /ko --></span>
+                                <span>审核时间：<!-- ko text: createdOnStr -->2016年06月23日<!-- /ko --></span>
+                            </div>
+                            <div class="c-maxoperationlistbtn">
+                                <a href="###"><i class="download ico">下载</i></a>
+                                <i class="ico nocollection" id="j-list-fav-14810">收藏</i>
+                                <i class="like ico" >点赞</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="resourcelist">
+                            <span class="checkbox"><input type="checkbox" name="resId" value="14810"></span>
+                            <div class="info">
+                                <i class="c-restype video" data-bind="css: typeIcon"></i>
+                                <div class="resourcecon">
+                                    <div class="title" title="我有一个梦想">
+                                        <a href="##">我有一个梦想</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottomoperation">
+                            <div class="attr">
+                                <span>贡献者:<em data-bind="text: creatorName">陈红</em></span>
+                                <span data-bind="text: createdOnStr">2016-06-23</span>
+                                <span>引用:<em data-bind="text: usedCount || 0">1</em></span>
+                                <span>收藏:<em data-bind="text: favCount  || 0">1</em></span>
+                                <span>下载:<em data-bind="text: downCount  || 0">1</em></span>
+                                <span>状态：<!-- ko text: statusStr -->已通过<!-- /ko --></span>
+                                <span><!-- ko text: editLog --><!-- /ko --></span>
+                                <span>审核时间：<!-- ko text: createdOnStr -->2016年06月23日<!-- /ko --></span>
+                            </div>
+                            <div class="c-maxoperationlistbtn">
+                                <a href="###"><i class="download ico">下载</i></a>
+                                <i class="ico nocollection">收藏</i>
+                                <i class="like ico" >点赞</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="resourcelist">
+                            <span class="checkbox"><input type="checkbox" name="resId" value="14810"></span>
+                            <div class="info">
+                                <i class="c-restype video" data-bind="css: typeIcon"></i>
+                                <div class="resourcecon">
+                                    <div class="title" title="兰亭集序">
+                                        <a href="##">兰亭集序</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottomoperation">
+                            <div class="attr">
+                                <span>贡献者:<em data-bind="text: creatorName">彭静静</em></span>
+                                <span data-bind="text: createdOnStr">2016-06-23</span>
+                                <span>引用:<em data-bind="text: usedCount || 0">1</em></span>
+                                <span>收藏:<em data-bind="text: favCount  || 0">1</em></span>
+                                <span>下载:<em data-bind="text: downCount  || 0">1</em></span>
+                                <span>状态：<!-- ko text: statusStr -->已通过<!-- /ko --></span>
+                                <span><!-- ko text: editLog --><!-- /ko --></span>
+                                <span>审核时间：<!-- ko text: createdOnStr -->2016年06月23日<!-- /ko --></span>
+                            </div>
+                            <div class="c-maxoperationlistbtn">
+                                <i class="ico nocollection">收藏</i>
+                                <i class="like ico" >点赞</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="resourcelist">
+                            <span class="checkbox"><input type="checkbox" name="resId" value="14810"></span>
+                            <div class="info">
+                                <i class="c-restype video" data-bind="css: typeIcon"></i>
+                                <div class="resourcecon">
+                                    <div class="title" title="离骚">
+                                        <a href="##">离骚</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottomoperation">
+                            <div class="attr">
+                                <span>贡献者:<em>彭静静</em></span>
+                                <span data-bind="text: createdOnStr">2016-06-23</span>
+                                <span>引用:<em data-bind="text: usedCount || 0">1</em></span>
+                                <span>收藏:<em data-bind="text: favCount  || 0">1</em></span>
+                                <span>下载:<em data-bind="text: downCount  || 0">1</em></span>
+                                <span>状态：<!-- ko text: statusStr -->已通过<!-- /ko --></span>
+                                <span><!-- ko text: editLog --><!-- /ko --></span>
+                                <span>审核时间：<!-- ko text: createdOnStr -->2016年06月23日<!-- /ko --></span>
+                            </div>
+                            <div class="c-maxoperationlistbtn">
+                                <a href="###"><i class="download ico">下载</i></a>
+                                <i class="ico nocollection">收藏</i>
+                                <i class="like ico" >点赞</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="resourcelist">
+                            <span class="checkbox"><input type="checkbox" name="resId" value="14810"></span>
+                            <div class="info">
+                                <i class="c-restype video" data-bind="css: typeIcon"></i>
+                                <div class="resourcecon">
+                                    <div class="title" title="故都的秋">
+                                        <a href="##">故都的秋</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottomoperation">
+                            <div class="attr">
+                                <span>贡献者:<em>陈德胜</em></span>
+                                <span data-bind="text: createdOnStr">2016-06-23</span>
+                                <span>引用:<em data-bind="text: usedCount || 0">1</em></span>
+                                <span>收藏:<em data-bind="text: favCount  || 0">1</em></span>
+                                <span>下载:<em data-bind="text: downCount  || 0">1</em></span>
+                                <span>状态：<!-- ko text: statusStr -->已通过<!-- /ko --></span>
+                                <span><!-- ko text: editLog --><!-- /ko --></span>
+                                <span>审核时间：<!-- ko text: createdOnStr -->2016年06月23日<!-- /ko --></span>
+                            </div>
+                            <div class="c-maxoperationlistbtn">
+                                <a href="###"><i class="download ico">下载</i></a>
+                                <i class="ico nocollection">收藏</i>
+                                <i class="like ico" >点赞</i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="g-foot">
+    <div class="z-index-foot">
+        <div class="m-foot">
+            <!-- 技术支持 -->
+            <div class="support">
+                <span class="wechat"><a href="##">关注微信</a>
+                </span>&nbsp;&nbsp;
+                <span class="qq">
+                    <a href="##">技术支持</a>
+                </span>&nbsp;&nbsp;
+                <span class="feedback">
+                    <i></i>
+                    <a href="#">意见反馈</a>
+                </span>
+            </div>
+            <!-- 地址 -->
+            <address class="address">Copyright 2013-2017,版权所有&nbsp;&nbsp;&nbsp;&nbsp;浙江省苍南中学</address>
+            <!-- 认证 -->
+            <div class="certificate">
+               <span>
+					<script src="//kxlogo.knet.cn/seallogo.dll?sn=e15012733010057535b1ey000000&amp;size=4"></script>
+                   <a href="##"  kx_type="缩放式" style="display:inline-block;position:relative;width:102px;height:37px;"><img src="https://ss.knet.cn/static/images/logo/cnnic.png" height="37" width="102" h="37" w="102" onmouseover="showFull(this)" onmouseout="showMin(this)" style="left:0;position:absolute;top:0;border:none;"></a>
+				</span>
+				<span>
+					<a id="___szfw_logo___" href="https://search.szfw.org/cert/l/CX20150123006870006571" target="_blank">
+                        <img src="https://static.leke.cn/images/common/beli-img2.png">
+                    </a>
+					<script type="text/javascript">(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</script>
+				</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://www.leke.cn/scripts/common/jquery-1.12.0.min.js"></script>
+<script>
+    $('.resource-title').click(function(){
+        $('.studysection .content').stop().show();
+    });
+    $('#okBtn').on('click','.u-btn',function(){
+        if($(this).index() != 1){
+            initTitle();
+        }
+        $('.studysection .content').stop().hide();
+    })
+    var initTitle = function(){
+        $('#title-htm').html($('#subjectId').val())
+    }
+    $('.m-tab-ul li').click(function(){
+        $('.m-tab-ul li').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.grade-quick').click(function(){
+        $('.teachingmaterial').toggle();
+    });
+    $('.teachingmaterial .btn').click(function(){
+        $('.teachingmaterial').hide();
+    });
+    $('.list li').click(function(){
+        $(this).parents('.list').find('li').removeClass('fontcolor');
+        $(this).addClass('fontcolor');
+    })
+    $('.sort span').click(function(){
+        $('.sort span').removeClass('on');
+        $(this).addClass('on');
+    });
+    $('.checkbox input').change(function(){
+        var flag = true;
+        if($(this).attr('id') == "checkAll" && $(this).attr('checked')){
+            $('.checkbox input').prop('checked',true)
+        }else{
+            $('.checkbox input').each(function(){
+                if( $(this).attr('id') != "checkAll"){
+                    if(!$(this).attr('checked')){
+                        flag = false;
+                    }
+                }
+            })
+            if(flag){
+                $('#checkAll').prop('checked',true)
+            }else{
+                $('#checkAll').prop('checked',false)
+            }
+        }
+    })
+
+
+</script>
+</html>
