@@ -20,9 +20,19 @@
             </div>
             <span class="c-top-tips">消息（99）</span>
             <span class="c-top-tips c-top-tips_set">设置</span>
-            <span class="c-top-tips c-top-tips_no">登录/注册</span>
+            <span class="c-top-tips c-top-tips_no"></span>
             <div class="c-top-person">
                 <img src="../images/index/person-header.png" alt="" class="c-top-person-img">
+                <div class="pop">
+                    <div class="avatar"><a href="#" target="_blank"><img src="../images/index/person-header.png" alt=""></a></div>
+                    <div class="name"><span class="user-name">高中老师</span><span class="level-"></span></div>
+                    <div class="lenum">账号：<span class="userNum">186616</span></div>
+                    <div class="title"><span>老师</span> - <span class="detail">苍南中学</span></div>
+                    <div class="join">
+                    </div>
+                    <div class="sign-out"><a href="##" id="signOut">退出</a></div>
+                    <div class="nullbox"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -564,8 +574,46 @@
         </div>
     </div>
 </div>
+<div class="m-modal-bg"></div>
+<div class="m-login c-login">
+    <form action="https://cas.leke.cn/login?service=https%3A%2F%2Findex.leke.cn" method="post">
+        <input type="hidden" id="resultMessage" value="">
+        <input type="hidden" name="service">
+        <input type="hidden" name="ty" value="yyyyy">
+        <!-- Title -->
+        <h5 class="title"><span>登录</span></h5>
+        <!-- Err-info -->
+        <div class="errinfo">
+            <p id="err_placeholder" class="login-wrong"></p>
+        </div>
+        <!-- Item -->
+        <ul>
+            <li>
+                <div class="ipt-box">
+                    <i class="icon-1"></i>
+                    <label for="loginName" style="position: absolute; left: 0px; top: 3px; color: graytext; cursor: text; margin: 2px 0px 0px 10px; padding-left: 25px; padding-top: 6px; line-height: 18px; font-size: 14px;"></label><input type="text" id="loginName" class="account" name="loginName" value="">
+                </div>
+            </li>
+            <li>
+                <div class="ipt-box">
+                    <i class="icon-2"></i>
+                    <label for="password" style="position: absolute; left: 0px; top: 3px; color: graytext; cursor: text; margin: 2px 0px 0px 10px; padding-left: 25px; padding-top: 6px; line-height: 18px; font-size: 14px; opacity: 0.4;"></label><input type="password" id="password" class="password" name="password">
+                </div>
+            </li>
+            <li>
+                <button class="sign-on" id="loginBtn" type="button">登录</button>
+            </li>
+        </ul>
+        <!-- 第三方登录 -->
+        <div class="others">
+            <span class="left"></span>
+            <span class="right"><a href="##" id="signBtn">注册 <i></i></a></span>
+        </div>
+    </form>
+</div>
 </body>
 <script src="https://www.leke.cn/scripts/common/jquery-1.12.0.min.js"></script>
+<script src="../js/index.js"></script>
 <script>
     $('.resource-title').click(function(){
         $('.studysection .content').stop().show();

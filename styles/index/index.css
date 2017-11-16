@@ -9,10 +9,11 @@
 .g-top .m-top-center-operation .c-top-form{position:relative;float:left;height:36px;width:234px;margin-top:6px;background:#fff;border-radius:18px;}
 .g-top .m-top-center-operation .c-demo-ipt{margin:8px 0 0 16px;font-size:12px;width:160px;border:none !important;background:none;color:#666;}
 .g-top .m-top-center-operation .c-search-icon{position:absolute;top:8px;right:20px;padding:10px;background:url('../../images/index/search.png') no-repeat center;cursor:pointer;}
-.g-top .m-top-center-operation .c-top-tips{padding-left:48px;line-height:46px;color:#fff;background:url('../../images/index/message.png') no-repeat 18px center;cursor:pointer;}
+.g-top .m-top-center-operation .c-top-tips{float:left;padding-left:48px;line-height:46px;color:#fff;background:url('../../images/index/message.png') no-repeat 18px center;cursor:pointer;}
 .g-top .m-top-center-operation .c-top-tips_set{background-image:url('../../images/index/set.png');background-position-x:6px;padding-left:30px;}
-.g-top .m-top-center-operation .c-top-tips_no{background:none;padding-left:18px;}
-.g-top .m-top-center-operation .c-top-person{float:right;width:44px;}
+.g-top .m-top-center-operation .c-top-tips_no{width:80px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;background:none;padding-left:18px;}
+.g-top .m-top-center-operation .c-top-person{position:relative;float:right;width:44px;}
+.g-top .m-top-center-operation .c-top-person:hover .pop{display:block;}
 .g-top .m-top-center-operation .c-top-person-img{width:44px;height:44px;border-radius:50%;cursor:pointer;}
 /*main*/
 .c-demo-tit{position:relative;height:40px;line-height:40px;margin:20px 0 40px;}
@@ -33,3 +34,186 @@
 .c-demo-con .c-demo-con-item a p.befind-link{background:url('../../images/index/befind-link.png') no-repeat center 40px;}
 .g-foot{background:#444;color:#fff;}
 .g-foot .support a{color:#fff;}
+
+/*登录*/
+.m-modal-bg{display:none;position:fixed;top:0;bottom:0;left:0;width:100%;background:#000;opacity:0.5;-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);}
+.c-login{display:none;top:50%;left:50%;margin:-170px 0 0 -160px;}
+.c-top-person:hover .pop {
+    display: block
+}
+
+.c-top-person img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: -3px;
+    vertical-align: middle
+}
+
+.c-top-person .pop {
+    display:none;
+    position: absolute;
+    right:-5px;
+    top: 50px;
+    height: 404px;
+    width: 265px;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+    font-family: "微软雅黑";
+    z-index:999;
+}
+
+.c-top-person .pop:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: -18px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom: 10px solid #dcdcdc
+}
+
+.c-top-person .pop:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: -14px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom: 8px solid #fff
+}
+
+.c-top-person .avatar {
+    position: relative;
+    padding: 35px 0 20px
+}
+
+.c-top-person .avatar:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%
+}
+
+.c-top-person .avatar img {
+    width: 110px;
+    height: 110px;
+    border: 2px solid #dcdcdc;
+    border-radius: 50%
+}
+
+.c-top-person .name {
+    margin-bottom: 6px;
+    line-height: 20px
+}
+
+.c-top-person .name .user-name {
+    font-size: 20px
+}
+
+.c-top-person .lenum {
+    margin-bottom: 6px;
+    line-height: 20px;
+    font-size: 12px
+}
+
+.c-top-person .title {
+    line-height: 20px;
+    font-size: 12px;
+    color: #999
+}
+
+.c-top-person .title .detail {
+    display: inline-block;
+    max-width: 130px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: top
+}
+
+.c-top-person .info {
+    position: absolute;
+    width: 100%;
+    bottom: 39px
+}
+
+.c-top-person .info ul:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.c-top-person .info ul li {
+    float: left;
+    position: relative;
+    padding: 0;
+    width: 25%;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.c-top-person .info ul li:after {
+    display: none
+}
+
+.c-top-person .info ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 5px;
+    background: url(../../images/common/line.png) no-repeat center center
+}
+
+.c-top-person .info ul li:first-child:before {
+    display: none
+}
+
+.c-top-person .info ul li a {
+    font-size: 14px
+}
+
+.c-top-person .info ul li a:hover {
+    color: #999
+}
+
+.c-top-person .info ul li p {
+    color: #0ba29a
+}
+
+.c-top-person .info-a3 ul li {
+    width: 33%
+}
+
+.c-top-person .sign-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5px;
+    height: 34px;
+    line-height: 34px;
+    background: #bbb;
+    transition: background .15s linear
+}
+
+.c-top-person .sign-out:hover {
+    background: #e7e7e7
+}
+
+.c-top-person .sign-out a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #fff
+}
