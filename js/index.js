@@ -26,6 +26,11 @@ var $noBtn = $('.c-top-tips_no'),
 showModal = function () {
     $modalBg.toggle();
     $modal.toggle();
+    if($modalBg.css('display') == "block"){
+        $('body').css('overflow','hidden');
+    }else{
+        $('body').css('overflow','auto');
+    }
 },
     /*登录状态*/
     storeLogin = function(){
@@ -51,6 +56,9 @@ $noBtn.click(function(){
     if($(this).hasClass('c-top-tips_over')){
         return;
     }
+    showModal();
+})
+$modalBg.click(function(){
     showModal();
 })
 $loginBtn.click(function(){
